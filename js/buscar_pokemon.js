@@ -12,8 +12,9 @@ btn_buscar.addEventListener('click',()=>{
         if(this.readyState==4 && this.status==200){
             let respuesta_api=JSON.parse(this.responseText)
             console.log(respuesta_api)
-            img_pokemon.setAttribute("src",respuesta_api.sprites.front_default)
+            img_pokemon.setAttribute("src",respuesta_api.sprites.other['official-artwork'].front_default)
             nombre_pokemon.textContent = respuesta_api.name
         }
-    }
+    }    
+
 })
