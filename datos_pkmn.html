@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Datos importantes</title>    
+</head>
+<body>
+    <header>        
+        <h1 class="mt-auto ml-5">Find your Pokemon</h1>
+    </header>
+    <br>
+    <br>
+    <section class="mt-auto ml-5">
+        <label for="input">Enter the name of Pokemon</label> 
+        <input type="text" id="campo_de_texto" class="campo_de_texto">        
+        <input type="submit" id="btn_buscar" class="btn btn-primary"   value="FIND" >
+        <div class="modal-body row"> 
+            <div class="col-md-5"> 
+            <!-- Your first column here --> 
+            <table class="table table-hover">
+                <thead>
+                  <tr>            
+                    <th scope="col">Dates</th>            
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>            
+                    <td>Name</td>
+                    <td><p id="nombre_pokemon" class="nombre_pokemon"></p></td>                               
+                  </tr>
+                  <tr>            
+                    <td>Height</td>
+                    <td><p id="altura_pokemon" class="altura_pokemon"></p></td>            
+                  </tr>
+                  <tr>            
+                    <td >Weight</td>
+                    <td><p id="peso_pokemon" class="peso_pokemon"></p></p></td>
+                  </tr>
+                  <tr>            
+                    <td >Type</td>
+                    <td><p id="tipo_pokemon" class="tipo_pokemon"></p></td>
+                  </tr>
+                  <tr>            
+                    <td >Base experience</td>
+                    <td><p id="base_exp_pokemon" class="base_exp_pokemon"></p></td>
+                  </tr>          
+                </tbody>
+              </table>            
+            </div> 
+            <div class="col-md-5">
+                <img id="img_pokemon" class="img_pokemon">
+            </div>
+        </div>
+           
+    
+</section>
+<footer>
+    <p class="mt-auto ml-5">Arquitectura de software. Politecnico Grancolombiano &copy; 2020</p>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="js/buscar_pokemon.js"></script>
+
+</body>
+</html>
