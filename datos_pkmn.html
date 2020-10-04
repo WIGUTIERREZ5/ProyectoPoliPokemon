@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <title>Datos importantes</title>    
 </head>
 <body>
@@ -13,17 +15,17 @@
     <br>
     <br>
     <section class="mt-auto ml-5">
-        <label for="input">Enter the name of Pokemon</label> 
+        <label class="ml-5" for="input">Enter the name of Pokemon</label> 
         <input type="text" id="campo_de_texto" class="campo_de_texto">        
         <input type="submit" id="btn_buscar" class="btn btn-primary"   value="FIND" >
         <div class="modal-body row"> 
-            <div class="col-md-5"> 
-            <!-- Your first column here --> 
-            <table class="table table-hover">
+            <div class="col-md-5">             
+            <table class="table table-hover table-dark ml-5">
                 <thead>
                   <tr>            
                     <th scope="col">Dates</th>            
-                  </tr>
+                    <th scope="col">Results</th>            
+                  </tr>                  
                 </thead>
                 <tbody>
                   <tr>            
@@ -56,8 +58,8 @@
            
     
 </section>
-<footer>
-    <p class="mt-auto ml-5">Arquitectura de software. Politecnico Grancolombiano &copy; 2020</p>
+<footer >
+    <p class="blockquote-footer ml-5">Arquitectura de software. Politecnico Grancolombiano &copy; 2020</p>
 </footer>
 
 <script src="js/jquery.min.js"></script>

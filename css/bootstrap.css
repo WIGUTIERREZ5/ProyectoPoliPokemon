@@ -60,7 +60,8 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: rgb(231, 97, 7);
+  /*background-color: #fff*/
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -74,15 +75,19 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  color: rgb(0, 0, 205);  
   margin-top: 1;
-  margin-bottom: 1.5rem;
-  border-color: #0b2e13;
-  text-align: center;
+  margin-bottom: 1.5rem;  
+  border-color: #e4ece6;
+  text-align: center;    
 }
 
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  color: #fff;
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 25px;
 }
 
 abbr[title],
@@ -195,8 +200,8 @@ figure {
 }
 
 img {
-  vertical-align: middle;  
-  border-style: none;
+  vertical-align: top;
+  border-style: none;  
 }
 
 svg {
@@ -206,6 +211,8 @@ svg {
 
 table {
   border-collapse: collapse;
+  font-family: 'Press Start 2P', cursive;
+  height: 400px;  
 }
 
 caption {
@@ -223,6 +230,9 @@ th {
 label {
   display: inline-block;
   margin-bottom: 0.5rem;
+  font-family: 'Rock Salt', cursive;
+  color: rgb(30, 8, 235);
+  
 }
 
 button {
@@ -362,6 +372,12 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1.2;
 }
 
+h1{
+  font-family: 'Press Start 2P', cursive;
+  color: #b9bbbe;
+  background-color: #0b3eca;
+}
+
 h1, .h1 {
   font-size: 2.5rem;
 }
@@ -465,7 +481,7 @@ mark,
 .blockquote-footer {
   display: block;
   font-size: 80%;
-  color: #6c757d;
+  color: #fff;
 }
 
 .blockquote-footer::before {
@@ -484,6 +500,17 @@ mark,
   border-radius: 0.25rem;
   max-width: 100%;
   height: auto;
+}
+
+.img_pokemon{
+  width: 450px;  
+  padding-left: 5ex;
+  padding-bottom: 0;  
+}
+
+.logo_pkmn{
+  width: 640px;  
+  align-content: center;
 }
 
 .figure {
@@ -1664,6 +1691,7 @@ pre code {
   width: 100%;
   margin-bottom: 1rem;
   color: #212529;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .table th,
@@ -1923,6 +1951,7 @@ pre code {
 .table-dark {
   color: #fff;
   background-color: #343a40;
+  width: 600px;
 }
 
 .table-dark th,
@@ -4796,7 +4825,8 @@ input[type="button"].btn-block {
 
 .card-footer {
   padding: 0.75rem 1.25rem;
-  background-color: rgba(0, 0, 0, 0.03);
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
@@ -8267,6 +8297,7 @@ button.bg-dark:focus {
 .ml-5,
 .mx-5 {
   margin-left: 3rem !important;
+  margin-right: 3rem !important;
 }
 
 .p-0 {
@@ -8539,7 +8570,7 @@ button.bg-dark:focus {
 
 .mt-auto,
 .my-auto {
-  margin-top: auto !important;
+  margin-top: 1 !important;  
 }
 
 .mr-auto,

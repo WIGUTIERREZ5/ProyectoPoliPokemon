@@ -3,7 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <title>Berries</title>    
 </head>
 <body>
@@ -21,44 +24,49 @@
         <label for="input">Enter the name of the berry</label> 
         <input type="text" id="campo_de_texto" class="campo_de_texto">        
         <input type="submit" id="btn_buscar" class="btn btn-primary"   value="FIND" >
-    <table class="table table-hover">
-        <thead>
-          <tr>            
-            <th scope="col">Dates</th>            
-          </tr>
-        </thead>
-        <tbody>
-          <tr>            
-            <td>Name</td>
-            <td><p id="name_berry" class="name_berry"></p></td>            
-          </tr>
-          <tr>            
-            <td>Natural Gift Power</td>
-            <td><p id="natural_gift_power" class="natural_gift_power"></p></td>            
-          </tr>
-          <tr>            
-            <td >Natural Gift Type</td>
-            <td><p id="natural_gift_type" class="natural_gift_type"></p></td>
-          </tr>
-          <tr>            
-            <td >Size</td>
-            <td><p id="size" class="size"></p></td>
-          </tr>
-          <tr>            
-            <td >Smoothness</td>
-            <td><p id="smoothness" class="smoothness"></p></td>
-          </tr>
-          <tr>            
-            <td >Soil Dryness</td>
-            <td><p id="soil_dryness" class="soil_dryness"></p></td>
-          </tr>
-        </tbody>
-      </table>      
+    <div class="modal-body row">
+      <div class="col-md-5">
+        <table class="table table-hover table-dark ml-auto">
+          <thead>
+            <tr>            
+              <th scope="col">Dates</th>            
+              <th scope="col">Results</th>     
+            </tr>
+          </thead>
+          <tbody>
+            <tr>            
+              <td>Name</td>
+              <td><p id="name_berry" class="name_berry"></p></td>            
+            </tr>
+            <tr>            
+              <td>Natural Gift Power</td>
+              <td><p id="natural_gift_power" class="natural_gift_power"></p></td>            
+            </tr>
+            <tr>            
+              <td >Natural Gift Type</td>
+              <td><p id="natural_gift_type" class="natural_gift_type"></p></td>
+            </tr>
+            <tr>            
+              <td >Size</td>
+              <td><p id="size" class="size"></p></td>
+            </tr>
+            <tr>            
+              <td >Smoothness</td>
+              <td><p id="smoothness" class="smoothness"></p></td>
+            </tr>
+            <tr>            
+              <td >Soil Dryness</td>
+              <td><p id="soil_dryness" class="soil_dryness"></p></td>
+            </tr>
+          </tbody>
+        </table>      
+      </div>
+    </div>
 </section>
 
 
-<footer class="ml-5">
-    <p>Arquitectura de software. Politecnico Grancolombiano &copy; 2020</p>
+<footer >
+    <p class="blockquote-footer ml-5">Arquitectura de software. Politecnico Grancolombiano &copy; 2020</p>
 </footer>
 
 <script src="js/jquery.min.js"></script>

@@ -3,7 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <title>Items</title>    
 </head>
 <body>
@@ -20,12 +23,12 @@
         <input type="text" id="campo_de_texto" class="campo_de_texto">        
         <input type="submit" id="btn_buscar" class="btn btn-primary"   value="FIND" >
         <div class="modal-body row"> 
-            <div class="col-md-5"> 
-            <!-- Your first column here --> 
-            <table class="table table-hover">
+            <div class="col-md-5">             
+            <table class="table table-hover table-dark">
                 <thead>
                   <tr>            
                     <th scope="col">Dates</th>            
+                    <th scope="col">Results</th> 
                   </tr>
                 </thead>
                 <tbody>
@@ -36,19 +39,23 @@
                   </tr>
                   <tr>            
                     <td>Category</td>
-                    <td><p id="category" class="category"></p></td>            
+                    <td><p id="category" class="category"></p></td>
+                    <td></td>
                   </tr>
                   <tr>            
                     <td >Effect</td>
                     <td><p id="effect" class="effect"></p></td>
+                    <td></td>
                   </tr>
                   <tr>            
                     <td >Short Effect</td>
                     <td><p id="short_effect" class="short_effect"></p></td>
+                    <td></td>
                   </tr>
                   <tr>            
                     <td >Text</td>
                     <td><p id="text" class="text"></p></td>
+                    <td></td>
                   </tr>          
                 </tbody>
               </table>            
@@ -60,7 +67,7 @@
 
 
 <footer class="ml-5">
-    <p>Arquitectura de software. Politecnico Grancolombiano &copy; 2020</p>
+    <p class="blockquote-footer ml-5">Arquitectura de software. Politecnico Grancolombiano &copy; 2020</p>
 </footer>
 
 <script src="js/jquery.min.js"></script>
